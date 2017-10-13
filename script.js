@@ -43,10 +43,11 @@ function printQuote(){
     var message; 
     var finalQuotePrint= getRandomQuote(quotes);
 
-    message = '<p class="quote">' + finalQuotePrint.quote + '</p>';
-message += '<p class="source">' + finalQuotePrint.source + '</p>';
+message = '<p class="quote">' + finalQuotePrint.quote + '</p>';
+message += '<span class="source">' + finalQuotePrint.source + '</span>';
 message += '<span class="citation">' + finalQuotePrint.citation + '</span>';
 message += '<span class="year">' + finalQuotePrint.year + '</span>';
 
     document.getElementById('quote-box').innerHTML = message;
+
 }
