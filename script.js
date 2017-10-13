@@ -23,6 +23,7 @@ var quotes = [
   {
     quote: "The first step is to say that you can.",
     source: "Will Smith",
+    citation:"quotes.lifehack.org",
     year: "2014"
 
   },
@@ -34,20 +35,21 @@ var quotes = [
 
   },
 ];
-
+// ALl the quotes that will be shown on the webpage
 function getRandomQuote(){
     var theQuote = Math.floor(Math.random() * (quotes.length));
-    return[theQuote];
+    return quotes[theQuote];
 }
+//randomly choosing a quote
 function printQuote(){
     var message; 
     var finalQuotePrint= getRandomQuote(quotes);
-
+//calling the quote and printing it on the page
 message = '<p class="quote">' + finalQuotePrint.quote + '</p>';
 message += '<span class="source">' + finalQuotePrint.source + '</span>';
 message += '<span class="citation">' + finalQuotePrint.citation + '</span>';
 message += '<span class="year">' + finalQuotePrint.year + '</span>';
-
+//displaying each element of an array on the webpage 
     document.getElementById('quote-box').innerHTML = message;
 
 }
