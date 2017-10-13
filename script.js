@@ -44,9 +44,9 @@ function printQuote(){
     var finalQuotePrint= getRandomQuote(quotes);
 
     message = '<p class="quote">' + finalQuotePrint.quote + '</p>';
-message += '<p class="quote">' + finalQuotePrint.quote + '</p>';
+message += '<p class="source">' + finalQuotePrint.source + '</p>';
 message += '<span class="citation">' + finalQuotePrint.citation + '</span>';
-message += '<span class+"year">' + finalQuotePrint.year + '</span>';
+message += '<span class="year">' + finalQuotePrint.year + '</span>';
 
     document.getElementById('quote-box').innerHTML = message;
 }
